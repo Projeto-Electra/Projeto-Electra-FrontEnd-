@@ -1,0 +1,231 @@
+    .licadas
+    {
+        margin-top: 11px;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 900;
+    }
+
+    #HeaderVertical
+    {
+        background-color:rgb(0, 0, 0);
+        height:25vw;
+        width:20%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        margin-top: 50vw;  
+    }
+  
+    #HeaderVertical img{
+
+        margin-left:14.5vw;
+        margin-top:5.5vw;
+        width:14vw;
+        height:14vw;
+      
+    
+     
+
+    }
+    #MenuMobile 
+    {
+        z-index: 1;
+        width:100%; 
+        overflow-x: hidden; 
+        overflow-y: hidden; 
+        position:absolute;
+        text-align:center;
+    height:0%;
+        left:0%;
+        margin-top:22vw;
+        margin-left:0%;
+        background-color:rgb(8, 8, 8);
+        transition:0.5s;
+        font-size:6vw;
+
+
+    }
+
+    #HrMenuLateral1
+    {
+      position:center;
+      width:91.5vw;
+      margin-top: 3.443526170798898vw;
+    }
+
+    #HrMenuLateral
+    {
+      position:center;
+      width:91.5vw;
+    }
+    
+    #MenuMobile a 
+    {
+    padding-top: 0.5856515373352855vw;
+    padding-right:0.5856515373352855vw;
+    padding-bottom:0.5856515373352855vw;
+    padding-left:-0.21961932650073207vw;
+    text-decoration:none;
+    color:rgb(246, 246, 246);
+    }
+    
+    #MenuMobile a:hover 
+    { 
+    transition-duration:0.20s;
+    transition-delay:0.2s;
+    transition-timing-function:ease;
+    transition-property:all;
+    border-radius:0.7320644216691069vw;
+    background-color:transparent;
+    color:rgb(220,20,20);
+    }
+    
+    .btn-login
+    {
+        width: 100%;
+        margin:1.8301610541727673vw;
+        border: none;
+        border-radius: 0.5124450951683748vw;
+        outline: none;
+        text-transform:uppercase;
+        font-weight: 700;
+        letter-spacing: 0.21961932650073207vw;
+        color: #ffffff;
+        background:#991616;
+        cursor: pointer;
+        box-shadow: 0px 10px 40px -12px #00000056;
+    }
+
+    #MenuMobile ul 
+    {
+    list-style:none;
+    margin-left:-0%;
+    left:0%;
+    padding-left: 0%;
+    
+    }
+
+    #MenuMobile hr
+    {
+      margin-left: 3.71900826446281vw;
+    }
+    
+    .closebtn 
+    {
+    margin-top:-25vw;
+    font-size:10vw;
+ 
+    }
+    
+    #botao-hamburg
+    {
+        color:rgb(246, 246, 246);
+        font-size:12vw;
+        cursor:pointer;
+        position:absolute;
+        visibility:visible;
+    }
+
+   *{
+        scroll-behavior: smooth;
+        margin:0;
+    }
+    @media only screen and (min-width:700px)
+    {
+
+        #HeaderVertical
+    {
+        display:none;
+    }   
+
+
+    }    
+
+    @media only screen and (max-width:699px)
+    {
+
+        #botao-hamburg
+    {
+        visibility:visible;
+        margin-top:4vw;
+        margin-left:43vw;
+    }
+    #HeaderVertical
+    {
+    
+        display:block;
+
+    }  
+
+    .headerConteudo, .iconLinha, .iconUser
+    {
+        visibility: hidden;
+    } 
+
+    .imagensHea img
+    {
+        display: block;
+    }
+
+    .imagensHea .logo
+    {
+        height:15vw;
+        width: 60vw;
+        margin-left:50vw;
+    }
+
+    .iconHea img
+    {
+        width:10vw;
+        height:10vw;
+        margin-left:-19vw;
+        margin-top:2vw;
+    
+    }
+
+    }
+
+    @media only screen and (max-height:450px) 
+
+    {
+
+        #MenuMobile ul
+        {
+            padding:13px;
+            margin-left:0%;
+            
+        }
+
+        #MenuMobile a 
+        {
+            font-size:1vw;
+            padding-right:2px;
+        }
+
+    }
+
+    @media only screen and (max-width:698px)
+    {
+        #HeaderVertical{
+        background-color:rgb(0, 0, 0);
+        height:25vw;
+        width:100%;
+        margin-top:-8vw;
+        }
+    
+        .Cont-rod
+        {
+            margin-right: 50vw;
+        }
+        .telefonetxt{
+            margin-right: -18vw;
+        
+        }
+        #iconLupa{
+            margin-left: -18vw;
+        }
+
+    }
