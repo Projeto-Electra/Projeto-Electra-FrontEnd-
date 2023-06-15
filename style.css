@@ -1,0 +1,914 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap');
+
+    * 
+    {
+     
+        margin: 0;
+       
+        font-family:'Montserrat', sans-serif;
+    }
+
+  
+    
+    body,html
+    {
+      overflow-x: hidden;
+        background-color: white;
+        color:BLACK;     
+    }   
+
+    /*---------------------------------- Linhas vermelhas do site ----------------------------------*/
+
+    hr 
+    {
+        box-shadow: none;
+        margin-left: 10%;
+        width: 80%;
+        height: 0.5124450951683748vw;
+        border: none;
+        background-color: red;
+        right: 1.8301610541727673vw;
+    }
+
+    /*-------------------------------- Fim Linhas vermelhas do site --------------------------------*/
+
+    /*---------------------------------- Promoção parte superior ----------------------------------*/
+
+    .anuncio
+    {
+        background-color: red;
+        color: white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .anuncio h2
+    {
+        color: rgb(255, 255, 255);
+        font-size: 1.5vw;
+    }
+
+    /*-------------------------------- Fim Promoção parte superior --------------------------------*/
+
+    /*--------------------------------- Texto informativos do site --------------------------------*/
+
+    h1
+    {
+        background-color: white;
+        color: black;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*------------------------------- Fim Texto informativos do site -------------------------------*/
+
+    /*---------------------------------------- Header ------------------------------------------*/
+
+    .header
+    {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin-right: 3.6603221083455346vw;
+        margin-top: 0.36603221083455345vw;
+    }
+
+    .imagensHea img
+    {
+        width: 20vw;
+    }
+
+    .iconHea img
+    {
+        width: 2vw;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.7320644216691069vw;
+    }
+
+    .header ul 
+    {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 7.320644216691069vw;
+
+    }
+
+    .header ul li a
+    {
+        display: inline-flex;
+        justify-content: space-between;
+        font-weight:800;
+        text-decoration: none;
+        margin-left: 0.7320644216691069vw;
+        color: black;
+        padding: 1.4641288433382138vw;
+        margin-top: -0.7320644216691069vw;
+    }
+    #Pesquisa{
+      background-color: rgba(247, 247, 247, 0.804);
+      width:100%;
+      height:70vw;
+      
+      border-top:0.1vw solid rgba(179, 179, 179, 0.675);
+    }
+    #Pesquisa  img{
+      width:2vw;
+      height:2vw;
+      margin-top:-3vw;
+      margin-left:92vw;
+    }
+    #Pesquisa input{
+      width:80vw;
+      height:4vw;
+      margin-top:1vw;
+      font-size:2.5vw;
+      color: #06060694;
+      border:0;
+      margin-left:9vw;
+    }
+
+    
+    /*--------------------------------------- Fim Header -----------------------------------------*/
+
+    /*------------------------------------------ Slides ------------------------------------------*/
+
+    section.slider
+    {
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+      padding: 0 !important;
+      overflow: hidden;
+    }
+
+    .slider-content
+    {
+      width: 400%;
+      height: auto;
+      display: flex;
+    }
+
+    .slider-content input, .img-mobile
+    {
+      display: none;
+    }
+
+    .slide-box
+    {
+      width: 25%;
+      height: 550px;
+      position: relative;
+      text-align: center;
+      transition: 1s;
+    }
+
+    .slide-box img
+    {
+      width: 100%;
+    }
+
+    .nav-manual, .nav-auto 
+    {
+      position: absolute;
+      width: 100%;
+      margin-top: 35%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-manual .manual-btn, .nav-auto div
+    {
+      border: 1px solid #ff0054;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child)
+    {
+      margin-right: 10px;
+    }
+
+    .nav-manual .manual-btn:hover
+    {
+      background-color: #ff0054;
+    }
+
+    #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2,
+    #radio3:checked ~ .nav-auto .auto-btn3
+    {
+      background-color: #ff0054;
+    }
+
+    #radio1:checked ~ .primeiro
+    {
+      margin-left: 0%;
+    }
+
+    #radio2:checked ~ .primeiro
+    {
+      margin-left: -25%;
+    }
+
+    #radio3:checked ~ .primeiro
+    {
+      margin-left: -50%;
+    }
+
+    /*--------------------------------------- Fim Slides -----------------------------------------*/
+
+
+    /*---------------------------------- Motos abaixo do slide -----------------------------------*/
+ 
+    .modelos
+    {
+      display: flex;
+      justify-content: space-around;
+      padding: 0 2.342606149341142vw ;
+      flex-wrap: wrap;
+    }
+
+    .modelos img
+    {
+      width: 18vw;
+      height: 26vw;
+    }
+
+    [data-animacao]
+    {
+      opacity:0; /*a data-animação inicia com opacity 0, não sendo possível visualizar os elementos*/
+      transition: .3s;
+    }
+
+    [data-animacao = "left"]{
+      transform: translate3d(-50px, 0, 0);/*o elemento desloca-se para a esquerda*/
+    }
+
+    [data-animacao = "right"]{
+      transform: translate3d(50px, 0, 0);/*o elemento desloca-se para a direita*/
+    }
+
+    [data-animacao].animate{
+      opacity:1;/*quando iniciada a chamada da função no JavaScript a classe animate é adicionada no elemento, e o elemento torna-se totalmente vísivel*/
+      transform: translate3d(0px,0px,0px); /*o elemento retorna para sua posição original*/
+    }
+    /*-------------------------------- Fim Motos abaixo do slide ---------------------------------*/
+
+    /*------------------------------------- Sobre empresa ----------------------------------------*/
+
+    .informacao
+    {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+    }
+
+    .informacao img
+    {
+      width: 29.282576866764277vw;
+      height: 27.301610541727673vw;
+      border: 2px solid red;
+      margin-left: 2vw;
+    }
+
+    .text-empresa
+    {
+        padding-top: 2.562225475841874vw;
+        margin-right:7vw;
+        font-size: 2vw;
+        text-align:center;
+    }
+
+    /*----------------------------------- Fim Sobre empresa --------------------------------------*/
+
+    /*---------------------------------- Localização e Suporte -----------------------------------*/
+
+      .Atendimento 
+      {
+        display: flex;
+        justify-content: space-around;      
+        flex-wrap: wrap;
+
+      }
+      
+      .Atendimento H1
+      {
+        font-weight: 900;
+        font-size:xx-large;
+      }
+      
+      .Atendimento iframe {
+        width: 30%;
+        height:  18.301610541727673vw;
+        margin-left: 3.6603221083455346vw;
+      }
+
+      .sup
+      {
+        display: flex;
+        flex-direction: column;
+        margin-right: 3.6603221083455346vw;
+      }
+
+      .lado
+      {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .lado ul
+      {
+        width: 14.641288433382138vw;
+        padding: 0;
+      }
+
+      #btnFormContato{
+        height:4vw;
+        font-size:1.5vw;
+        width:18vw;
+      }
+      .Nome
+      {
+        font-size:1.2vw;
+        width: 12.7vw;
+        height: 1.4641288433382138vw;
+        background-color: #f2f2f2;
+        border: 1px solid #d6d6d6;
+      }
+
+      .Email
+      {
+        font-size:1.2vw;
+        width: 14.2vw;
+        height: 1.4641288433382138vw;
+        background-color: #f2f2f2;
+        border: 1px solid #d6d6d6;
+      }
+
+      textarea
+      {
+        margin-top: 0.7320644216691069vw;
+        resize: none;
+        width:30vw;
+        height:10vw;
+        font-size:1.2vw;
+        background-color: #f2f2f2;
+        border: 1px solid #d6d6d6;
+      }
+
+      input[type=button]
+      {
+        width:14.641288433382138vw;
+        height: 1.4641288433382138vw;
+        background-color: red;
+        margin-left:24% ;
+        margin-right:24% ;
+        border: 1px solid #000000;
+        color: #f0ffff94;
+        font-weight: 900;
+        font-size: smaller;
+        margin-top: 0.7320644216691069vw;
+      }
+    /*---------------------------------- Fim Localização e Suporte -----------------------------------*/
+
+    /*---------------------------------- Imagens Motos -----------------------------------*/
+
+      .container-cards
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        min-height: 60vh;
+        gap: 2px;
+      } 
+      
+      .card
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        width: 350px;
+        height: 450px;
+        
+      }
+      
+      .img_moto 
+      {
+        width: 350px;
+        height:230px;
+      }
+      
+      .button_comprar
+      {
+        width: 180px;
+        height: 35px;
+        background-color: red;
+        border: none;
+        color: #f2f2f2;
+        cursor: pointer;
+        font-size: 25px;
+        font-weight: bold;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 20px;
+        transition: all 0.6s;
+      }
+      
+      .button_comprar :hover
+      {
+        background-color: rgba(51, 19, 19, 0.804);
+        color: #625555;
+      }
+
+      .card  h2
+      {
+        margin-top: 20px;
+      }
+      
+
+    /*--------------------------------  Fim Imagens Motos ---------------------------------*/
+
+
+     /*---------------------------------------- Rodapé ---------------------------------------*/
+      footer
+      {
+        height:auto;
+        width: 100%;
+        background-color: black;
+        color: white ;
+      }
+
+      .let-rod
+      {
+        display: flex;
+        margin-top: 1.4641288433382138vw;
+        justify-content: space-around;
+      }
+
+      .let-rod ul
+      {
+        flex-direction: column;
+      }
+
+      .Link-rod
+      {
+        margin-left: 10.980966325036603vw;
+        margin-right: 3.6603221083455346vw;
+      }
+
+      .Link-rod h3
+      {
+        margin-top: 2.1961932650073206vw;
+      }
+
+      .Link-rod a
+      {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 0.36603221083455345vw;
+      }
+
+      .pt
+      {
+        cursor: pointer;
+      }
+
+
+      .Cont-rod
+      {
+        margin-right:  21.961932650073205vw;
+        margin-left: 0.7320644216691069vw;
+      }
+
+      .Cont-rod h3
+      {
+        margin-top: 2.1961932650073206vw;
+      }
+
+      .Cont-rod p
+      {
+        margin-bottom: 0.5124450951683748vw;
+      }
+
+      .img-rod
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:2vw;
+      }
+
+      .redes-in
+      {
+        margin: 0 0.14641288433382138vw;
+        width: 3.1961932650073206vw;
+        cursor: pointer;
+      }
+
+      .redes-ins
+      {
+        width: 3.1961932650073206vw;
+        cursor: pointer;
+        margin: 0 0.14641288433382138vw;
+      }
+
+      .redes-fac
+      {
+        width: 3.1961932650073206vw;
+        cursor: pointer;
+        margin: 0 0.14641288433382138vw;
+      }
+      
+      .Logo-rod
+      {
+        width: 19.980966325036603vw;
+        margin-right:  1.8301610541727673vw;
+      }
+
+     /*-------------------------------- Fim Rodapé ---------------------------------*/
+
+     /*------------------------------ Responsividade -------------------------------*/
+
+     @media only screen and (min-width:1800px)
+      {
+        .slide-box
+        {
+          height: 800px;
+        }
+      }
+
+     @media only screen and (max-width:1050px)
+     {
+      .slide-box
+      {
+        height: 400px;
+      }
+      .anuncio h2
+      {
+        font-size: 15px;
+      }
+     }
+
+     @media only screen and (max-width:790px)
+     {
+      .slide-box
+      {
+        height: 300px;
+      }
+     }
+
+
+     @media only screen and (max-width:699px)
+     {    
+
+      .anuncio
+      {
+        margin-bottom: 20px;
+        height:60px;
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+      }
+
+      .anuncio h2
+      {
+        font-size: 3.2vw;
+        margin-top: -9px;
+      }
+      .header
+      {
+        display: none;
+      }
+    
+      .ModelosTitulo{
+        text-align: center;
+        margin-top:10vw;
+      }
+
+      .modelos{
+        display:block;
+      }
+
+      .modelos img
+      {
+        width: 83vw;
+        height: 115vw;
+        margin-left:5.9vw;
+        margin-top:2vw;
+      }
+    
+      .informacao img
+      {
+        width: 83vw;
+        height: 60vw;
+        border: 2px solid red;
+        margin-left: 1.5vw;
+      }
+      .text-empresa{
+        text-align: center;
+        width:100vw;
+        font-size:4vw;
+        margin-left:-9vw;
+      }
+      .Cont-rod
+      {
+        display:flex;
+
+      }
+     
+
+      .TxtContentInfo{
+        margin-left:17vw;
+      
+      }
+      .Atendimento iframe {
+        width: 90%;
+        height: 50vw;
+        margin-left:0;
+      }
+      .ContatoTitle{
+
+        margin-left:28vw;
+
+      }
+      .telefonetxt{
+
+        margin-left:20vw;
+
+      }
+      .telefonetxt2{
+
+        margin-left:19vw;
+        width: 100%;
+
+      }
+      .emailtxt{
+
+        margin-left:20vw;
+        width: 100%;
+
+      }
+
+      .emailtxt2{
+
+        margin-left:10vw;
+        width: 100%;
+
+      }
+      input[type=button]
+      {
+        width:55vw;
+        height: 10vw;
+        background-color: red;
+        margin-left:27% ;
+        margin-right:24% ;
+        border: 1px solid #000000;
+        color: #f0ffff94;
+        font-weight: 900;
+        font-size: 5vw;
+        margin-top: 10px;
+      }
+      .lado ul
+      {
+   
+        margin-right:40vw;
+      }
+      .Nome
+      {
+        width: 42vw;
+        height:6vw;
+        font-size: 4vw;
+        margin-left:-5vw;
+        background-color: #f2f2f2;
+        border: 1px solid #d6d6d6;
+      }
+
+      .Email
+      {
+        
+        width:44.4vw;
+        height:6vw;
+        font-size: 4vw;
+        margin-left:-21.5vw;
+        background-color: #f2f2f2;
+        border: 1px solid #d6d6d6;
+      }
+      #btnFormContato{
+        height:9vw;
+        font-size:6vw;
+        width:77.0vw;
+      }
+      textarea
+      {
+        margin-top: 10px;
+        resize: none;
+        width:92vw;
+        text-align: center;
+        height:50vw;
+        font-size: 7vw;
+        margin-right:33vw;
+        background-color: #f2f2f2;
+        border: 1px solid #d6d6d6;
+      }
+      .AtendimentoInput{
+        margin-left:40vw;
+      }
+      .let-rod{
+        display:block;
+    
+        width:100%;
+        text-align: center;
+        font-size:4.5vw;
+      }
+      
+ 
+      
+      .Link-rod{
+        display:block;
+        width:100%;
+        text-align: center;
+        margin-left:-9vw;
+      }
+      footer{
+        height:auto;
+        width:100%;
+        text-align: center;
+      }
+      
+      .redes-in
+      {
+        margin: 0 2px;
+        width: 10vw;
+        cursor: pointer;
+      }
+
+      .redes-ins
+      {
+        width: 10vw;
+        cursor: pointer;
+        margin: 0 2px;
+      }
+
+      .redes-fac
+      {
+        width: 10vw;
+        cursor: pointer;
+        margin: 0 2px;
+      }
+      
+      .Logo-rod
+      {
+        width: 40vw;
+ 
+       
+      }
+      
+      .IconsFooter{
+        margin-top:3vw;
+        margin-right:43vw;
+        width:100%;
+      }
+      .img-rod{
+        display:block;
+        margin-left:-5vw;
+      }
+     
+     #Pesquisa
+     {
+      background-color: rgba(247, 247, 247, 0.804);
+      width:100%;
+      height:90vw;
+      
+      border-top:0.1vw solid rgba(179, 179, 179, 0.675);
+    }
+
+    #Pesquisa  img
+    {
+      width:2vw;
+      height:2vw;
+      margin-top:-3vw;
+      margin-left:92vw;
+    }
+
+    #Pesquisa input
+    {
+      width:80vw;
+      height:12vw;
+      margin-top:1vw;
+      text-align: center;
+      font-size:4.5vw;
+      color: #06060694;
+      border:0;
+      margin-left:9vw;
+    }
+
+    .botoesPesquisa
+    {
+      margin-top:10vw;
+    }
+
+    .img-desktop
+    {
+      display: none;
+    }
+
+    .img-mobile
+    {
+      height:90vw;
+      display: block;
+    }
+
+    .nav-auto, .nav-manual
+    {
+      margin-top: 44%;
+    }
+
+    section.slider
+    {
+      margin: 0 auto;
+      width: 100%;
+      height: 90vw;
+      padding: 0 !important;
+      overflow: hidden;
+    }
+
+    .slider-content
+    {
+      width: 400%;
+      height: auto;
+      display: flex;
+    }
+  
+    .slide-box
+    {
+      height: 250px;
+    }
+    .nav-auto, .nav-manual
+    {
+      margin-top: 97%;
+    }
+     }
+
+    
+@media only screen and (max-width:414px)
+{  
+  .Nome
+  {
+    width: 36vw;
+    height:6vw;
+    font-size: 4vw;
+    margin-left:-6vw;
+    background-color: #f2f2f2;
+    border: 1px solid #d6d6d6;
+  }
+
+  .Email
+  {
+    
+    width: 43vw;
+    height:6vw;
+    font-size: 4vw;
+    margin-left:-19vw;
+    background-color: #f2f2f2;
+    border: 1px solid #d6d6d6;
+  }
+
+  textarea
+  {
+    margin-top: 10px;
+    resize: none;
+    font-size: 4vw;
+    margin-left:-5vw;
+    background-color: #f2f2f2;
+    border: 1px solid #d6d6d6;
+  }
+
+  .nav-auto, .nav-manual
+  {
+    margin-top: 94%;
+  }
+
+  
+
+  .slide-box
+  {
+    height: 150px;
+  }
+
+}
