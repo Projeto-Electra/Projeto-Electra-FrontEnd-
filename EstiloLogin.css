@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter+Tight&family=Oswald:wght@500&display=swap');
+
+    body
+    {
+        margin: 0;
+        
+        font-family: 'Inter Tight', sans-serif;
+    }
+    
+    body,html{
+
+        overflow-x: hidden;      
+
+    }
+
+    body * 
+    {
+        box-sizing: border-box;
+    }
+
+    #formLogin{
+        margin-top:2vw;
+        margin-bottom: 10vw;
+        flex-wrap: wrap;
+    }
+
+    .voltar
+    {    
+  text-decoration: none;
+
+        justify-content: flex-end;
+        display: flex;
+        width:30vw;
+        margin-right: 1.8301610541727673vw;
+    }
+
+    .voltar p
+    {
+
+        background-color: #000000;
+        color: #f0f0f0;
+        padding: 1.0980966325036603vw;
+        border-radius: 1.8301610541727673vw;
+        cursor: pointer;
+    }
+
+    .voltar a
+    {
+      text-decoration: none;
+    }
+
+
+    .main-login
+    {    
+        width: 100vw;
+        height: 76.7vh;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .left-login
+    {
+        width: 50vw;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .left-login h1
+    {
+        color: #000000;
+        font-family: 'Inter Tight', sans-serif;
+    }
+
+    .right-login
+    {
+        width: 90vw;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-login
+    {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2.1961932650073206vw 2.562225475841874vw;
+        background:#313131;
+        border-radius: 0.7320644216691069vw;
+        box-shadow: 0px 10px 40px #42424256;
+    }
+
+    .card-login h1
+    {
+        color: #ffffff;
+        font-weight: 800;
+        margin: 0;
+    }
+
+    .textfield
+    {
+        width: 100%;
+        margin: 0.7320644216691069vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .textfield input
+    {
+        width: 100%;
+        border: none;
+        border-radius: 1.0980966325036603vw;
+        padding: 1.0980966325036603vw;
+        background-color: #686868;
+        color: #f0ffffde;
+        font-size: large;
+        box-shadow: 0px 10px 40px #00000056;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    .textfield label
+    {
+        color: #f0ffffde;
+        margin-bottom: 0.7320644216691069vw;
+    }
+
+    .textfield input:hover
+    {
+        color: #f0ffff94;
+    }
+
+    .licadas
+    {
+        margin-top: 11px;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 900;
+    }
+
+    .btn-login
+    {
+        width: 100%;
+        padding: 16px 0px;
+        margin:1.8301610541727673vw;
+        border: none;
+        border-radius: 0.5124450951683748vw;
+        outline: none;
+        text-transform:uppercase;
+        font-weight: 700;
+        letter-spacing: 0.21961932650073207vw;
+        color: #ffffff;
+        background:#991616;
+        cursor: pointer;
+        box-shadow: 0px 10px 40px -12px #00000056;
+    }
+
+    .left-login-image
+    {
+       
+        width: 30vw;
+        font-size: 3vw;
+    }
+
+    
+  
+
+    @media only screen and (max-width:699px) {
+    
+        .main-login
+        {
+            flex-direction: column;
+        }
+
+        .left-login h1
+        {
+            display: none;
+        }
+        
+        .left-login
+        {
+            width: 100%;
+            height: auto;
+        }
+
+        .right-login
+        {
+            width: 100%;
+            height: auto;
+        }
+
+        .left-login-image
+        {
+           
+            margin-top:45vw;
+            width: 100%;
+        }
+
+        .card-login
+        {
+            width: 90%;
+        }
+        .voltar
+        {    
+      text-decoration: none;
+      width:auto;
+            justify-content: flex-end;
+            display: flex;
+            margin-right: 34.8301610541727673vw;
+        }
+    
+       
+         
+    
+    }
+
